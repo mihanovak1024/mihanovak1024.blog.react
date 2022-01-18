@@ -24,14 +24,6 @@ body {
   text-decoration: none;
 }
 
-ul {
-  padding: 0em;
-}
-
-li {
-  list-style-type: none;
-}
-
 .flexOnly {
   display:flex;
 }
@@ -49,6 +41,13 @@ li {
 .flexSpaceBetween {
   display: flex;
   justify-content: space-between;
+}
+
+
+a:hover {
+  color: #aaa;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Header */
@@ -80,6 +79,7 @@ header {
 }
 
 .authorImage {
+  margin-top: 1.5em;
   width: 10em;
   height: 10em;
 }
@@ -94,11 +94,34 @@ header {
   margin-right: 0.5em;
 }
 
+li.sidebarContactListItem {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+li.sidebarContactListItemHover:hover {
+  transition:all 0.5s ease 0s;
+  margin-top: 0.5em;
+  margin-left: 5em;
+  transform: scale(1.5);
+}
+
+ul.sidebarContactListItem {
+  padding: 0em;
+}
+
+p.sidebarContactListItem {
+  padding: 0.2em;
+  margin: 0.2em;
+  font-size: 1.1rem;
+}
+
 /* Footer  */
 
 footer {
   padding:1.5em 0em 1.5em 0em;
-  margin: 2em 0em 0em 0em;
+  margin: 10em 0em 0em 0em;
   width: 100%;
   bottom: 0px;
   background-color: #1a1d24;
@@ -111,11 +134,19 @@ footer {
   width: 50%; 
 }
 
+h1.postTitle {
+  margin-top: 1.3em;
+  margin-bottom: 0em;
+  padding-bottom: 0em;
+  font-size: 1.8em;
+}
+
 a.postLinkDecor {
-  color: #75ccd0;
+  color: #75ccd0aa;
 }
 
 a.postLinkDecor:hover {
+  color: #75ccd0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -125,11 +156,13 @@ a.postLinkDecor:hover {
   margin-right: 0.5em;
 }
 
-p.noSpacing {
-  margin: 0px;
-  padding: 0px;
+.postTimeDescription {
+  font-size: 1rem;
 }
 
-.smallText {
-  font-size: 0.9rem;
+.postExcerp {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0.6em;
+  font-size: 1.2rem;
 }
