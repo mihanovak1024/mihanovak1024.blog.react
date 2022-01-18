@@ -76,13 +76,7 @@ header {
 
 .sidebar {
   width: 25%;
-  opacity: 0.75;
 }
-
-.sidebar::hover {
-  opacity: 1;
-}
-
 
 .authorImage {
   margin-top: 1.5em;
