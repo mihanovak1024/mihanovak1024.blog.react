@@ -1,4 +1,135 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+    "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  color: #eaeaea;
+  line-height: 1.5;
+  background-color: #252a34;
+}
+
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bodyContent {
+  margin: auto;
+  width: 1250px;
+}
+
+.noLinkDecor {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0em;
+}
+
+li {
+  list-style-type: none;
+}
+
+.flexOnly {
+  display:flex;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.flexSpaceEvenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Header */
+
+header {
+  margin: 1.8em 0 1.8em 0;
+}
+
+.logoImage {
+  width: 3em;
+  height: 3em;
+  margin-right: 1.1em;
+}
+
+.logoText {
+  font-size: 1.6rem;
+}
+
+.menuItem {
+  margin: 0.8em;
+  padding: 0.3em;
+  font-size: 1.5rem;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 25%;
+}
+
+.authorImage {
+  width: 10em;
+  height: 10em;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.contactImage {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5em;
+}
+
+/* Footer  */
+
+footer {
+  padding:1.5em 0em 1.5em 0em;
+  margin: 2em 0em 0em 0em;
+  width: 100%;
+  bottom: 0px;
+  background-color: #1a1d24;
+}
+
+/* Posts */
+
+.postContainer {
+  margin-top: 2em;
+  width: 50%; 
+}
+
+a.postLinkDecor {
+  color: #75ccd0;
+}
+
+a.postLinkDecor:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.horizontalMarginSeparator {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+p.noSpacing {
+  margin: 0px;
+  padding: 0px;
+}
+
+.smallText {
+  font-size: 0.9rem;
 }
