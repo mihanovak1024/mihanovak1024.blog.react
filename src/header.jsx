@@ -26,11 +26,9 @@ const configJson = {
 export class Header extends React.Component {
   render() {
     return (
-      <header className="header">
-      <a className="flexCenter flexSpaceBetween noLinkDecor" href="/">
+      <header className="header flexCenter flexSpaceBetween">
         <Logo />
         <Menu />
-        </a>
       </header>
     );
   }
@@ -38,10 +36,10 @@ export class Header extends React.Component {
 
 function Logo(props) {
   return (
-    <div className="flexCenter flexSpaceEvenly">
+    <a href="/" className="flexCenter noLinkDecor">
       <img src="/images/logo_inverse.png" className="logoImage" />
       <span className="logoText">mihanovak1024</span>
-    </div>
+    </a>
   );
 }
 
