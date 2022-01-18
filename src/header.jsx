@@ -26,9 +26,11 @@ const configJson = {
 export class Header extends React.Component {
   render() {
     return (
-      <header className="flexCenter flexSpaceBetween header">
+      <header className="header">
+      <a className="flexCenter flexSpaceBetween noLinkDecor" href="/">
         <Logo />
         <Menu />
+        </a>
       </header>
     );
   }
