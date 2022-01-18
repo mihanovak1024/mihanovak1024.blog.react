@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const configJson = {
   menuItems: [
@@ -53,8 +54,8 @@ function Menu(props) {
 
 function MenuItem(props) {
   return (
-    <a className="menuItem noLinkDecor" href={props.url}>
+    <Link className="menuItem noLinkDecor" to={props.url}>
       <span>{props.name}</span>
-    </a>
+    </Link>
   );
 }
