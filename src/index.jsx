@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Outlet, Routes, Route } from "react-router-dom";
 import { Sidebar } from "./sidebar.jsx";
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
@@ -13,31 +13,38 @@ import { About } from "./about.jsx";
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <div>
         <div className="bodyContent">
           <Header />
         </div>
         <hr />
         <div className="bodyContent flexOnly">
           <Sidebar />
-          <Routes>
-            <Route
-              path="/"
-              element={<PostsContainer postList={jsonData.postList} />}
-            />
-            <Route path="about" element={<About />} />
-          </Routes>
+          <Outlet />
         </div>
         <footer>
           <div className="bodyContent">
             <Footer />
           </div>
         </footer>
-      </BrowserRouter>
+      </div>
     );
   }
 }
 
 // ========================================
 
-render(<App />, document.getElementById("root"));
+render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route
+          index
+          element={<PostsContainer postList={jsonData.postList} />}
+        />
+        <Route path="/about" element={<About />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>,
+  document.getElementById("root")
+);
