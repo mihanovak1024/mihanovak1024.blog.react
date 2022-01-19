@@ -13,33 +13,31 @@ import { About } from "./about.jsx";
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <BrowserRouter>
         <div className="bodyContent">
           <Header />
         </div>
         <hr />
         <div className="bodyContent flexOnly">
           <Sidebar />
-          <PostsContainer postList={jsonData.postList} />
+          <Routes>
+            <Route
+              path="/"
+              element={<PostsContainer postList={jsonData.postList} />}
+            />
+            <Route path="about" element={<About />} />
+          </Routes>
         </div>
         <footer>
           <div className="bodyContent">
             <Footer />
           </div>
         </footer>
-      </div>
+      </BrowserRouter>
     );
   }
 }
 
 // ========================================
 
-render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="about" element={<About />} />
-    </Routes>
-  </BrowserRouter>,
-  document.getElementById("root")
-);
+render(<App />, document.getElementById("root"));
