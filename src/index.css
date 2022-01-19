@@ -92,8 +92,12 @@ a:hover {
 
 .Sidebar {
   padding-right: 1em;
-  width: 23%;
+  width: 23%; 
+}
+
+.Sidebar--Sticky {
   position:sticky;
+  top: 0;
 }
 
 .Author__Image {

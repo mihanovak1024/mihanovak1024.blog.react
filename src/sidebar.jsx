@@ -23,7 +23,7 @@ export class Sidebar extends React.Component {
   render() {
     return (
       <div className="Sidebar" style={{ opacity: this.state.opacity }}>
-        <div
+        <div className="Sidebar--Sticky"
           onMouseLeave={this.handleMouseLeave}
           onMouseEnter={this.handleMouseEnter}
         >
