@@ -22,7 +22,7 @@ export class Sidebar extends React.Component {
 
   render() {
     return (
-      <div className="sidebar" style={{ opacity: this.state.opacity }}>
+      <div className="Sidebar" style={{ opacity: this.state.opacity }}>
         <div
           onMouseLeave={this.handleMouseLeave}
           onMouseEnter={this.handleMouseEnter}
@@ -47,7 +47,7 @@ class AuthorImage extends React.Component {
   render() {
     return (
       <img
-        className="authorImage circle"
+        className="Author__Image Author__Image--Circle"
         src="/images/contact/miha_square.jpg"
         onMouseEnter={(e) =>
           (e.currentTarget.src = "/images/contact/miha_square_smile.jpg")
@@ -62,7 +62,7 @@ class AuthorImage extends React.Component {
 
 function ContactLinkList(props) {
   return (
-    <ul className="sidebarContactListItem">
+    <ul className="Contact__ItemWrapper">
       <ContactLink
         contactImage="/images/contact/location.png"
         contactLinkName="Slovenia, Europe"
@@ -96,21 +96,21 @@ function ContactLink(props) {
   let html;
   if (props.contactUrl.length > 0) {
     html = (
-      <li className="sidebarContactListItem sidebarContactListItemHover">
-        <a href={props.contactUrl} className="noLinkDecor">
-          <div className="flexCenter">
-            <img className="contactImage" src={props.contactImage} />
-            <p className="sidebarContactListItem">{props.contactLinkName}</p>
+      <li className="Contact__Item Contact__Item--Hover">
+        <a href={props.contactUrl}>
+          <div className="Contact__ItemContainer">
+            <img className="Contact__ItemImage" src={props.contactImage} />
+            <p className="Contact__ItemText">{props.contactLinkName}</p>
           </div>
         </a>
       </li>
     );
   } else {
     html = (
-      <li className="sidebarContactListItem">
-        <div className="flexCenter">
-          <img className="contactImage" src={props.contactImage} />
-          <p className="sidebarContactListItem">{props.contactLinkName}</p>
+      <li className="Contact__Item">
+        <div className="Contact__ItemContainer">
+          <img className="Contact__ItemImage" src={props.contactImage} />
+          <p className="Contact__ItemText">{props.contactLinkName}</p>
         </div>
       </li>
     );

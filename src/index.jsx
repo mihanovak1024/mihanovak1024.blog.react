@@ -13,19 +13,13 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="bodyContent">
-          <Header />
-        </div>
+        <Header />
         <hr />
-        <div className="bodyContent flexOnly">
+        <div className="MiddleSection">
           <Sidebar />
           <Outlet />
         </div>
-        <footer>
-          <div className="bodyContent">
-            <Footer />
-          </div>
-        </footer>
+        <Footer />
       </div>
     );
   }

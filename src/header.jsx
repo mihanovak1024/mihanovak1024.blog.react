@@ -26,7 +26,7 @@ const configJson = {
 export class Header extends React.Component {
   render() {
     return (
-      <header className="header flexCenter flexSpaceBetween">
+      <header className="Header">
         <Logo />
         <Menu />
       </header>
@@ -36,9 +36,9 @@ export class Header extends React.Component {
 
 function Logo(props) {
   return (
-    <a href="/" className="flexCenter noLinkDecor">
-      <img src="/images/logo_inverse.png" className="logoImage" />
-      <span className="logoText">mihanovak1024</span>
+    <a href="/" className="Logo">
+      <img src="/images/logo_inverse.png" className="Logo__Image" />
+      <span className="Logo__Text">mihanovak1024</span>
     </a>
   );
 }
@@ -53,7 +53,7 @@ function Menu(props) {
 
 function MenuItem(props) {
   return (
-    <Link className="menuItem noLinkDecor" to={props.url}>
+    <Link className="Menu__Item Menu__Item--NoLinkDecor" to={props.url}>
       <span>{props.name}</span>
     </Link>
   );

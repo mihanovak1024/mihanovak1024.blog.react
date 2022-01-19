@@ -14,35 +14,16 @@ body {
   padding: 0px;
 }
 
-.bodyContent {
+hr {
+  border-top: 1px;
+  border-color: #555;
+}
+
+.MiddleSection {
+  max-width: 1250px;
   margin: auto;
-  width: 1250px;
-}
-
-.noLinkDecor {
-  color: #eaeaea;
-  text-decoration: none;
-}
-
-.flexOnly {
-  display:flex;
-}
-
-.flexCenter {
   display: flex;
-  align-items: center;
 }
-
-.flexSpaceEvenly {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.flexSpaceBetween {
-  display: flex;
-  justify-content: space-between;
-}
-
 
 a:hover {
   color: #aaa;
@@ -52,67 +33,93 @@ a:hover {
 
 /* Header */
 
-header {
-  margin: 1.8em 0 1.8em 0;
+.Header {
+  max-width: 1250px;
+  margin: 1.8em auto 1.8em auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logoImage {
+.Logo {
+  display: flex;
+  align-items: center;
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+.Logo__Image {
   width: 3em;
   height: 3em;
   margin-right: 1.1em;
 }
 
-.logoText {
+.Logo__Text {
   font-weight: bold;
   font-size: 1.6rem;
 }
 
-.menuItem {
+.Menu__Item {
   margin: 0.8em;
   padding: 0.3em;
   font-size: 1.5rem;
 }
 
-/* Sidebar */
-
-.sidebar {
-  width: 25%;
+.Menu__Item--NoLinkDecor {
+  color: #eaeaea;
+  text-decoration: none;
 }
 
-.authorImage {
+/* Sidebar */
+
+.Sidebar {
+  width: 25%;
+  position:sticky;
+}
+
+.Author__Image {
   margin-top: 1.5em;
   width: 10em;
   height: 10em;
 }
 
-.circle {
+.Author__Image--Circle {
   border-radius: 50%;
 }
 
-.contactImage {
+.Contact__ItemImage {
   width: 15px;
   height: 15px;
   margin-right: 0.5em;
 }
 
-li.sidebarContactListItem {
+.Contact__ItemWrapper {
   padding: 0px;
   margin: 0px;
   list-style-type: none;
 }
 
-li.sidebarContactListItemHover:hover {
-  transition:all 0.5s ease 0s;
+.Contact__Item {
+  padding: 0em;
+  display: flex;
+  align-items: center;
+}
+
+.Contact__Item--Hover:hover {
+  transition: all 0.5s ease 0s;
   margin-top: 0.5em;
   margin-left: 5em;
   transform: scale(1.5);
 }
 
-ul.sidebarContactListItem {
-  padding: 0em;
+.Contact__ItemContainer {
+  color: #eaeaea;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-p.sidebarContactListItem {
+.Contact__ItemText {
   padding: 0.2em;
   margin: 0.2em;
   font-size: 1.1rem;
@@ -120,48 +127,59 @@ p.sidebarContactListItem {
 
 /* Footer  */
 
-footer {
-  padding:1.5em 0em 1.5em 0em;
-  margin: 10em 0em 0em 0em;
-  width: 100%;
-  bottom: 0px;
+.Footer {
   background-color: #1a1d24;
+}
+
+.Footer__Text {
+  width: 1250px;
+  padding: 1.5em 0 1.5em 0;
+  margin: 7em auto 0 auto;
+  bottom: 0px;
 }
 
 /* Posts */
 
-.postContainer {
+.PostContainer {
   margin-top: 2em;
-  width: 50%; 
+  width: 50%;
 }
 
-h1.postTitle {
-  margin-top: 1.3em;
+.Post {
+  margin-bottom: 2.5em;
+}
+
+.Post__Title {
   margin-bottom: 0em;
   padding-bottom: 0em;
   font-size: 1.8em;
 }
 
-a.postLinkDecor {
+.Post__Link--LightBlue {
   color: #75ccd0aa;
 }
 
-a.postLinkDecor:hover {
+.Post__Link--LightBlue:hover {
   color: #75ccd0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.horizontalMarginSeparator {
+.Post__Details {
+  display: flex;
+  align-items: center;
+}
+
+.Post__Details--Separator {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
 
-.postTimeDescription {
+.Post__Details--FontSize {
   font-size: 1rem;
 }
 
-.postExcerp {
+.Post__Excerp {
   margin: 0px;
   padding: 0px;
   margin-top: 0.6em;

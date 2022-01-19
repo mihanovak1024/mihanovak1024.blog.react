@@ -4,7 +4,7 @@ import "./index.css";
 export class PostsContainer extends React.Component {
   render() {
     return (
-      <div className="postContainer">
+      <div className="PostContainer">
         <PostTitle />
         <br></br>
         {this.createPosts(this.props.postList)}
@@ -33,21 +33,20 @@ function PostTitle(props) {
 }
 
 function BlogPost(props) {
-  console.log("title = ");
   const data = props.data;
   const dateHumanReadable = getDateFromTimestamp(data.timestampCreated);
   const readTime = data.readingTime + " minute read";
   return (
-    <div>
-      <a href={data.url} className="postLinkDecor">
-        <h1 className="postTitle">{data.title}</h1>
+    <div className="Post">
+      <a href={data.url} className="Post__Link--LightBlue">
+        <h1 className="Post__Title">{data.title}</h1>
       </a>
-      <div className="flexCenter">
-        <span className="smallText">{dateHumanReadable}</span>
-        <span className="horizontalMarginSeparator">-</span>
-        <span className="postTimeDescription">{readTime}</span>
+      <div className="Post__Details">
+        <span className="Post__Details--FontSize">{dateHumanReadable}</span>
+        <span className="Post__Details--Separator">-</span>
+        <span className="Post__Details--FontSize">{readTime}</span>
       </div>
-      <p className="postExcerp">{data.excerpt}</p>
+      <p className="Post__Excerp">{data.excerpt}</p>
     </div>
   );
 }
