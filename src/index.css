@@ -79,12 +79,16 @@ a:hover {
 
 .Author__Image {
   margin-top: 1.5em;
-  width: 10em;
-  height: 10em;
+  width: 9em;
+  height: 9em;
 }
 
 .Author__Image--Circle {
   border-radius: 50%;
+  padding: 0.3em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #555;
 }
 
 .Contact__ItemImage {
