@@ -8,6 +8,9 @@ html {
   line-height: 1.5;
   background-color: #252a34;
 }
+html, body, #root, #root>div {
+  height: 100%
+}
 
 body {
   margin: 0px;
@@ -16,13 +19,27 @@ body {
 
 hr {
   border-top: 1px;
+  border-left: 0px;
+  border-right: 0px;
   border-color: #555;
+  width: 100%;
+}
+
+.RootDiv {
+  display: flex;
+  flex-direction: column;
 }
 
 .MiddleSection {
   max-width: 1250px;
   margin: auto;
   display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.Main {
+  width: 51%;
 }
 
 a:hover {
@@ -34,6 +51,7 @@ a:hover {
 /* Header */
 
 .Header {
+  width: 100%;
   max-width: 1250px;
   margin: 1.8em auto 1.8em auto;
   display: flex;
@@ -73,7 +91,8 @@ a:hover {
 /* Sidebar */
 
 .Sidebar {
-  width: 25%;
+  padding-right: 1em;
+  width: 23%;
   position:sticky;
 }
 
@@ -132,21 +151,23 @@ a:hover {
 /* Footer  */
 
 .Footer {
+  margin-top: 8em;
   background-color: #1a1d24;
 }
 
 .Footer__Text {
   width: 1250px;
   padding: 1.5em 0 1.5em 0;
-  margin: 7em auto 0 auto;
+  margin: 0em auto 0 auto;
   bottom: 0px;
 }
+
+/* ======================================== */
 
 /* Posts */
 
 .PostContainer {
-  margin-top: 2em;
-  width: 50%;
+  margin-top: 3em;
 }
 
 .Post {
@@ -188,4 +209,31 @@ a:hover {
   padding: 0px;
   margin-top: 0.6em;
   font-size: 1.2rem;
+}
+
+/* About */
+
+.Article>p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.Article>h1 {
+  margin: 2em 0 0 0;
+}
+
+.Article>h2 {
+  margin: 2em 0 0 0;
+  font-size: 1.8em;
+}
+
+.Article__Sequence--Emphasize {
+  color: #00adb5;
+  font-weight: bold;
+}
+
+.Article__Image {
+  width: 100%;
+  margin: 1em 0 1em 0;
+  border-radius: 0.3em;
 }

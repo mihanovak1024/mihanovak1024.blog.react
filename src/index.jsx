@@ -12,12 +12,14 @@ import { About } from "./about.jsx";
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="RootDiv">
         <Header />
         <hr />
         <div className="MiddleSection">
           <Sidebar />
-          <Outlet />
+          <div className="Main">
+            <Outlet/>
+          </div>
         </div>
         <Footer />
       </div>
