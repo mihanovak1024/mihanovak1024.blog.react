@@ -6,6 +6,7 @@ export class About extends React.Component {
     return (
       <div>
         <h1>About</h1>
+        <hr />
         <div className="Article">
           <p>
             My name is <Emphasize text="Miha Novak" /> (it’s a <b>male</b> name,
@@ -33,6 +34,7 @@ export class About extends React.Component {
             src="/images/about/miha_classy.jpg"
           ></img>
           <h1>Interests</h1>
+          <hr />
           <p>
             My passion is tackling interesting problems the company is facing
             and helping to <Emphasize text="grow" /> their{" "}
@@ -47,7 +49,6 @@ export class About extends React.Component {
             of this page.
           </p>
           <h2>Serious Projects</h2>
-          <hr />
           <p>
             Currently I only have one serious project in my arsenal;
             HomeClinico. It is a startup/side-project that’s solving a problem
@@ -56,7 +57,6 @@ export class About extends React.Component {
             with daily guided exercises.
           </p>
           <h2>Prototypes</h2>
-          <hr />
           <p>
             I like to tinker around different programming challenges and try to
             prototype my ideas. To name a few:
@@ -95,6 +95,7 @@ export class About extends React.Component {
           </p>
 
           <h1>Professional Experience</h1>
+          <hr />
 
           <p>
             I really do fell lucky and proud, at the same time, to work
@@ -178,9 +179,10 @@ export class About extends React.Component {
             and help, I really do appreciate it!
           </p>
           <h1>Career Switch</h1>
+          <hr />
           <p>
-            Being an Android developer for the past <b>7 years</b>, I wanted to see
-            what else is out there. I decided to pursue the career of a
+            Being an Android developer for the past <b>7 years</b>, I wanted to
+            see what else is out there. I decided to pursue the career of a
             FullStack Engineer as it forces you to know all the specifics of
             <ul>
               <li>Frontend Engineer</li>
