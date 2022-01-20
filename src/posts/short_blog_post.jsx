@@ -6,9 +6,13 @@ export class BlogPost extends React.Component {
     const data = this.props.data;
     const dateHumanReadable = this.getDateFromTimestamp(data.timestampCreated);
     const readTime = data.readingTime + " minute read";
+
+    // Redirect to the original blog
+    // because I didn't want to rewrite everything from scratch.
+    const url = "https://mihanovak1024.com" + data.url;
     return (
       <div className="Post">
-        <a href={data.url} className="Post__Link--LightBlue">
+        <a href={url} className="Post__Link--LightBlue">
           <h1 className="Post__Title">{data.title}</h1>
         </a>
         <div className="Post__Details">
