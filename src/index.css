@@ -215,6 +215,17 @@ a:hover {
   font-size: 1.2rem;
 }
 
+.Post__ToTop {
+  float: right;
+  color: #75ccd0aa;
+  margin-bottom: 1.5em;
+  text-decoration: none;
+}
+
+.Post__ToTop:hover {
+  color: #75ccd0;
+}
+
 /* About */
 
 .Article>p {
