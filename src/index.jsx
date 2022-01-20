@@ -1,13 +1,15 @@
 import React from "react";
 import "./index.css";
 import { BrowserRouter, Outlet, Routes, Route } from "react-router-dom";
+import { render } from "react-dom";
 import { Sidebar } from "./sidebar.jsx";
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
-import { PostsContainer } from "./posts.jsx";
-import { jsonData } from "./blogdata.jsx";
-import { render } from "react-dom";
+import { Home } from "./home.jsx";
+import { Posts } from "./posts/posts.jsx";
 import { About } from "./about.jsx";
+
+import { jsonData } from "./blogdata.jsx";
 
 class App extends React.Component {
   render() {
@@ -18,7 +20,7 @@ class App extends React.Component {
         <div className="MiddleSection">
           <Sidebar />
           <div className="Main">
-            <Outlet/>
+            <Outlet />
           </div>
         </div>
         <Footer />
@@ -33,11 +35,9 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route
-          index
-          element={<PostsContainer postList={jsonData.postList} />}
-        />
+        <Route index element={<Home postList={jsonData.postList} />} />
         <Route path="/about" element={<About />} />
+        <Route path="/posts" element={<Posts postList={jsonData.postList} />} />
       </Route>
     </Routes>
   </BrowserRouter>,
