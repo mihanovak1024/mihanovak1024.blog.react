@@ -2,23 +2,30 @@ import React from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
 
+const TYPE_LINK = 0;
+const TYPE_FILE = 1;
+
 const configJson = {
   menuItems: [
     {
       name: "About",
       url: "/about",
+      type: 0,
     },
     {
       name: "Posts",
       url: "/posts",
+      type: 0,
     },
     {
       name: "Portfolio",
       url: "/portfolio",
+      type: 0,
     },
     {
       name: "CV",
-      url: "/cv",
+      url: "/cv.pdf",
+      type: 1,
     },
   ],
 };
@@ -36,10 +43,10 @@ export class Header extends React.Component {
 
 function Logo(props) {
   return (
-    <a href="/" className="Logo">
+    <Link className="Logo" to={"/"}>
       <img src="/images/logo_inverse.png" className="Logo__Image" />
       <span className="Logo__Text">mihanovak1024</span>
-    </a>
+    </Link>
   );
 }
 
@@ -52,9 +59,19 @@ function Menu(props) {
 }
 
 function MenuItem(props) {
-  return (
-    <Link className="Menu__Item Menu__Item--NoLinkDecor" to={props.url}>
-      <span>{props.name}</span>
-    </Link>
-  );
+  let element;
+  if (props.type === TYPE_LINK) {
+    element = (
+      <Link className="Menu__Item Menu__Item--NoLinkDecor" to={props.url}>
+        <span>{props.name}</span>
+      </Link>
+    );
+  } else {
+    element = (
+      <a className="Menu__Item Menu__Item--NoLinkDecor" href={props.url}>
+        {props.name}
+      </a>
+    );
+  }
+  return element;
 }
