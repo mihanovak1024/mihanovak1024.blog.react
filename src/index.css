@@ -25,6 +25,11 @@ hr {
   width: 100%;
 }
 
+.TextSequence--Emphasize {
+  color: #00adb5;
+  font-weight: bold;
+}
+
 .RootDiv {
   display: flex;
   flex-direction: column;
@@ -36,10 +41,6 @@ hr {
   display: flex;
   width: 100%;
   flex: 1;
-}
-
-.Main {
-  width: 51%;
 }
 
 a:hover {
@@ -139,9 +140,12 @@ a:hover {
   transform: scale(1.5);
 }
 
+.Contact__ItemLink {
+  text-decoration: none;
+}
+
 .Contact__ItemContainer {
   color: #eaeaea;
-  text-decoration: none;
   display: flex;
   align-items: center;
 }
@@ -168,10 +172,15 @@ a:hover {
 
 /* ======================================== */
 
-/* Posts */
-
 .PostContainer {
   margin-top: 3em;
+  width: 51%;
+}
+
+/* Posts */
+
+.Posts {
+  width: 51%;
 }
 
 .Post {
@@ -228,6 +237,10 @@ a:hover {
 
 /* About */
 
+.About {
+  width: 51%;
+}
+
 .Article>p {
   font-size: 1.2rem;
   text-align: justify;
@@ -242,13 +255,57 @@ a:hover {
   font-size: 1.8em;
 }
 
-.Article__Sequence--Emphasize {
-  color: #00adb5;
-  font-weight: bold;
-}
-
 .Article__Image {
   width: 100%;
   margin: 1em 0 1em 0;
   border-radius: 0.3em;
+}
+
+/* Portfolio */
+.Portfolio {
+  width: 72%;
+}
+
+.Portfolio__Title {
+  margin:0.5em 0 0 0;
+  padding:0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.Portfolio__Title--LightBlue {
+  color: #75ccd0aa;
+}
+
+.Portfolio__Title--LightBlue:hover {
+  color: #75ccd0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.Portfolio__Description {
+  font-size: 1.5rem;
+}
+
+.Portfolio__ProjectExcerpt {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.Portfolio__ProjectGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 25% 25% 25% 25%; 
+  column-gap: 1em;
+  row-gap: 5em;
+}
+
+.Porfolio__Project {
+  align-self: stretch;
+}
+
+.Porfolio__ProjectImage {
+  width: 100%;
+  border-radius: 0.4em;
 }

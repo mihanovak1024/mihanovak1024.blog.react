@@ -12,7 +12,7 @@ export class Posts extends React.Component {
       postsElementsPerYear.push(postPerYear);
     });
 
-    return <div id="top">{postsElementsPerYear}</div>;
+    return <div id="top" className="Posts">{postsElementsPerYear}</div>;
   }
 
   getPostsPerYear() {
