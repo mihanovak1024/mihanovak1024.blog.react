@@ -97,7 +97,7 @@ function ContactLink(props) {
   if (props.contactUrl.length > 0) {
     html = (
       <li className="Contact__Item Contact__Item--Hover">
-        <a href={props.contactUrl}>
+        <a className="Contact__ItemLink" href={props.contactUrl}>
           <div className="Contact__ItemContainer">
             <img className="Contact__ItemImage" src={props.contactImage} />
             <p className="Contact__ItemText">{props.contactLinkName}</p>

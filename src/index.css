@@ -139,9 +139,12 @@ a:hover {
   transform: scale(1.5);
 }
 
+.Contact__ItemLink {
+  text-decoration: none;
+}
+
 .Contact__ItemContainer {
   color: #eaeaea;
-  text-decoration: none;
   display: flex;
   align-items: center;
 }
