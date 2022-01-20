@@ -9,7 +9,6 @@ import { Home } from "./home.jsx";
 import { Posts } from "./posts/posts.jsx";
 import { About } from "./about.jsx";
 import { Portfolio } from "./portfolio/portfolio.jsx";
-import Project from "./portfolio/project.jsx";
 
 import { jsonData } from "./blogdata.jsx";
 
@@ -39,7 +38,6 @@ render(
         <Route path="/about" element={<About />} />
         <Route path="/posts" element={<Posts postList={jsonData.postList} />} />
         <Route path="/portfolio" element={<Portfolio projectList={jsonData.projectList}/>}/>
-        <Route path="/portfolio/:project" element={<Project />} />
       </Route>
     </Routes>
   </BrowserRouter>,

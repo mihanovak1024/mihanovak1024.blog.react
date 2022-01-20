@@ -33,11 +33,11 @@ function ProjectsGrid(props) {
 }
 
 function PortfolioProject(props) {
-  let url = "/portfolio/" + props.url;
+  let url = "https://mihanovak1024.com/portfolio/" + props.url;
   return (
     <div className="Portfolio__Project">
       <img className="Porfolio__ProjectImage" src={props.img} />
-      <Link className="Portfolio__Title Portfolio__Title--LightBlue" to={url}>{props.title}</Link>
+      <a className="Portfolio__Title Portfolio__Title--LightBlue" href={url}>{props.title}</a>
       <p className="Portfolio__ProjectExcerpt">{props.excerpt}</p>
     </div>
   );

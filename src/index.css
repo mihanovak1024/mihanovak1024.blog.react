@@ -263,12 +263,13 @@ a:hover {
 
 /* Portfolio */
 .Portfolio {
-  width: 70%;
+  width: 72%;
 }
 
 .Portfolio__Title {
   margin:0.5em 0 0 0;
   padding:0;
+  font-weight: bold;
   font-size: 1.5em;
 }
 
@@ -296,8 +297,8 @@ a:hover {
   display: grid;
   width: 100%;
   grid-template-columns: 25% 25% 25% 25%; 
-  column-gap: 10px;
-  row-gap: 15px;
+  column-gap: 1em;
+  row-gap: 5em;
 }
 
 .Porfolio__Project {
