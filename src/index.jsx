@@ -8,6 +8,8 @@ import { Footer } from "./footer.jsx";
 import { Home } from "./home.jsx";
 import { Posts } from "./posts/posts.jsx";
 import { About } from "./about.jsx";
+import { Portfolio } from "./portfolio/portfolio.jsx";
+import Project from "./portfolio/project.jsx";
 
 import { jsonData } from "./blogdata.jsx";
 
@@ -19,9 +21,7 @@ class App extends React.Component {
         <hr />
         <div className="MiddleSection">
           <Sidebar />
-          <div className="Main">
-            <Outlet />
-          </div>
+          <Outlet />
         </div>
         <Footer />
       </div>
@@ -38,6 +38,8 @@ render(
         <Route index element={<Home postList={jsonData.postList} />} />
         <Route path="/about" element={<About />} />
         <Route path="/posts" element={<Posts postList={jsonData.postList} />} />
+        <Route path="/portfolio" element={<Portfolio projectList={jsonData.projectList}/>}/>
+        <Route path="/portfolio/:project" element={<Project />} />
       </Route>
     </Routes>
   </BrowserRouter>,

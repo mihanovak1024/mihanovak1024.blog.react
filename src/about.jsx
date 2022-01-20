@@ -1,10 +1,11 @@
 import React from "react";
 import "./index.css";
+import { Emphasize } from "./textutils";
 
 export class About extends React.Component {
   render() {
     return (
-      <div>
+      <div className="About">
         <h1>About</h1>
         <hr />
         <div className="Article">
@@ -204,8 +205,4 @@ export class About extends React.Component {
       </div>
     );
   }
-}
-
-function Emphasize(props) {
-  return <span className="Article__Sequence--Emphasize">{props.text}</span>;
 }
