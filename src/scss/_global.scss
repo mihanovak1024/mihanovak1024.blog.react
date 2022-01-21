@@ -1,0 +1,28 @@
+@import 'variables';
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 14px;
+  margin: 0 2rem 0 2rem;
+  padding: 0px;
+  color: $primary-color;
+  line-height: 1.5;
+  background-color: $background-color;
+}
+
+html, body, #root, #root > div {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+hr {
+  border-top: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: $hr-color;
+  width: 100%;
+}

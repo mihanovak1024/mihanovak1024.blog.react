@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css";
+import "../css/index.css";
 import { Emphasize } from "../textutils";
 import { Link } from "react-router-dom";
 
@@ -36,7 +36,7 @@ function PortfolioProject(props) {
   let url = "https://mihanovak1024.com/portfolio/" + props.url;
   return (
     <div className="Portfolio__Project">
-      <img className="Porfolio__ProjectImage" src={props.img} />
+      <img className="Portfolio__ProjectImage" src={props.img} />
       <a className="Portfolio__Title Portfolio__Title--LightBlue" href={url}>{props.title}</a>
       <p className="Portfolio__ProjectExcerpt">{props.excerpt}</p>
     </div>

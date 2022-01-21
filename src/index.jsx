@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./css/index.css";
 import { BrowserRouter, Outlet, Routes, Route } from "react-router-dom";
 import { render } from "react-dom";
 import { Sidebar } from "./sidebar.jsx";

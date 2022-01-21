@@ -1,0 +1,19 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  color: #eaeaea;
+  line-height: 1.5;
+  background-color: #252a34;
+}
+
+html, body, #root, #root > div {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+/*# sourceMappingURL=global.css.map */
