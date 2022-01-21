@@ -1,0 +1,68 @@
+@import 'variables';
+
+.PostContainer {
+  margin-top: 3em;
+  width: 51%;
+}
+
+/* Posts */
+.Posts {
+  width: 51%;
+}
+
+.Post {
+  margin-bottom: 2.5em;
+
+  &__Title {
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+    font-size: 1.8em;
+  }
+
+  &__Link--LightBlue {
+    color: $primary-link-color-alpha;
+
+    &:hover {
+      color: $primary-link-color;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &__Details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+    &--Separator {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+    }
+
+    &--FontSize {
+      font-size: 1rem;
+    }
+
+  }
+
+  &__Excerp {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0.6em;
+    font-size: 1.2rem;
+  }
+
+  &__ToTop {
+    float: right;
+    color: $primary-link-color-alpha;
+    margin-bottom: 1.5em;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-link-color;
+    }
+  }
+}

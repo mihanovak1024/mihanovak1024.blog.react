@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import 'variables';
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
@@ -17,4 +17,12 @@ html, body, #root, #root > div {
 body {
   margin: 0px;
   padding: 0px;
+}
+
+hr {
+  border-top: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: $hr-color;
+  width: 100%;
 }
