@@ -1,30 +1,5 @@
-$background-color: #252a34;
-$footer-background-color: #1a1d24;
-
-$primary-color: #eaeaea;
-$primary-dark-color: #aaa;
-$primary-link-color: #75ccd0;
-$primary-link-color-alpha: #75ccd0aa;
-$hr-color: #555;
-
-html {
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-  font-size: 14px;
-  margin: 0px;
-  padding: 0px;
-  color: $primary-color;
-  line-height: 1.5;
-  background-color: $background-color;
-}
-
-html, body, #root, #root > div {
-  height: 100%;
-}
-
-body {
-  margin: 0px;
-  padding: 0px;
-}
+@import './variables.scss';
+@import './global.scss';
 
 hr {
   border-top: 1px;
