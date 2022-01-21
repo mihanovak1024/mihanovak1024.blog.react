@@ -269,16 +269,16 @@ a:hover {
   width: 51%;
 }
 
-.Article > p {
+.Article p {
   font-size: 1.2rem;
   text-align: justify;
 }
 
-.Article > h1 {
+.Article h1 {
   margin: 2em 0 0 0;
 }
 
-.Article > h2 {
+.Article h2 {
   margin: 2em 0 0 0;
   font-size: 1.8em;
 }
@@ -332,13 +332,13 @@ a:hover {
   row-gap: 5em;
 }
 
-.Porfolio__Project {
+.Portfolio__Project {
   -ms-flex-item-align: stretch;
   -ms-grid-row-align: stretch;
   align-self: stretch;
 }
 
-.Porfolio__ProjectImage {
+.Portfolio__ProjectImage {
   width: 100%;
   border-radius: 0.4em;
 }
