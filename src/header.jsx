@@ -41,7 +41,7 @@ export class Header extends React.Component {
   }
 }
 
-function Logo(props) {
+function Logo() {
   return (
     <Link className="Logo" to={"/"}>
       <img src="/images/logo_inverse.png" className="Logo__Image" />
@@ -50,9 +50,9 @@ function Logo(props) {
   );
 }
 
-function Menu(props) {
+function Menu() {
   const items = configJson.menuItems.map((menuItem) => (
-    <MenuItem key={menuItem.name} name={menuItem.name} url={menuItem.url} />
+    <MenuItem key={menuItem.name} {...menuItem} />
   ));
 
   return <div>{items}</div>;

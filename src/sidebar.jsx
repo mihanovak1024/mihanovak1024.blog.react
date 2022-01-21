@@ -66,7 +66,6 @@ function ContactLinkList(props) {
       <ContactLink
         contactImage="/images/contact/location.png"
         contactLinkName="Slovenia, Europe"
-        contactUrl=""
       />
       <ContactLink
         contactImage="/images/contact/twitter.png"
@@ -94,7 +93,7 @@ function ContactLinkList(props) {
 
 function ContactLink(props) {
   let html;
-  if (props.contactUrl.length > 0) {
+  if (props.contactUrl) {
     html = (
       <li className="Contact__Item Contact__Item--Hover">
         <a className="Contact__ItemLink" href={props.contactUrl}>
