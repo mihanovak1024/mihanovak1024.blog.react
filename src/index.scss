@@ -1,19 +1,24 @@
-:root {
-  --background-color: #252a34;
-}
+$background-color: #252a34;
+$footer-background-color: #1a1d24;
+
+$primary-color: #eaeaea;
+$primary-dark-color: #aaa;
+$primary-link-color: #75ccd0;
+$primary-link-color-alpha: #75ccd0aa;
+$hr-color: #555;
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
-    "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 14px;
   margin: 0px;
   padding: 0px;
-  color: #eaeaea;
+  color: $primary-color;
   line-height: 1.5;
-  background-color: var(--background-color);
+  background-color: $background-color;
 }
-html, body, #root, #root>div {
-  height: 100%
+
+html, body, #root, #root > div {
+  height: 100%;
 }
 
 body {
@@ -25,49 +30,67 @@ hr {
   border-top: 1px;
   border-left: 0px;
   border-right: 0px;
-  border-color: #555;
+  border-color: $hr-color;
   width: 100%;
 }
 
 .TextSequence--Emphasize {
-  color: #00adb5;
+  color: $primary-link-color;
   font-weight: bold;
 }
 
 .RootDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .MiddleSection {
   max-width: 1250px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 a:hover {
-  color: #aaa;
+  color: $primary-dark-color;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 /* Header */
-
 .Header {
   width: 100%;
   max-width: 1250px;
   margin: 1.8em auto 1.8em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .Logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  color: #eaeaea;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: $primary-color;
   text-decoration: none;
 }
 
@@ -89,19 +112,19 @@ a:hover {
 }
 
 .Menu__Item--NoLinkDecor {
-  color: #eaeaea;
+  color: $primary-color;
   text-decoration: none;
 }
 
 /* Sidebar */
-
 .Sidebar {
   padding-right: 1em;
-  width: 23%; 
+  width: 23%;
 }
 
 .Sidebar--Sticky {
-  position:sticky;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
 }
 
@@ -116,7 +139,7 @@ a:hover {
   padding: 0.3em;
   border-style: solid;
   border-width: 1px;
-  border-color: #555;
+  border-color: $primary-dark-color;
 }
 
 .Contact__ItemImage {
@@ -133,15 +156,21 @@ a:hover {
 
 .Contact__Item {
   padding: 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Contact__Item--Hover:hover {
+  -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   margin-top: 0.5em;
   margin-left: 5em;
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .Contact__ItemLink {
@@ -149,9 +178,13 @@ a:hover {
 }
 
 .Contact__ItemContainer {
-  color: #eaeaea;
+  color: $primary-color;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Contact__ItemText {
@@ -161,10 +194,9 @@ a:hover {
 }
 
 /* Footer  */
-
 .Footer {
   margin-top: 8em;
-  background-color: #1a1d24;
+  background-color: $footer-background-color;
 }
 
 .Footer__Text {
@@ -175,14 +207,12 @@ a:hover {
 }
 
 /* ======================================== */
-
 .PostContainer {
   margin-top: 3em;
   width: 51%;
 }
 
 /* Posts */
-
 .Posts {
   width: 51%;
 }
@@ -198,18 +228,22 @@ a:hover {
 }
 
 .Post__Link--LightBlue {
-  color: #75ccd0aa;
+  color: $primary-link-color-alpha;
 }
 
 .Post__Link--LightBlue:hover {
-  color: #75ccd0;
+  color: $primary-link-color;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .Post__Details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Post__Details--Separator {
@@ -230,31 +264,30 @@ a:hover {
 
 .Post__ToTop {
   float: right;
-  color: #75ccd0aa;
+  color: $primary-link-color-alpha;
   margin-bottom: 1.5em;
   text-decoration: none;
 }
 
 .Post__ToTop:hover {
-  color: #75ccd0;
+  color: $primary-link-color;
 }
 
 /* About */
-
 .About {
   width: 51%;
 }
 
-.Article>p {
+.Article > p {
   font-size: 1.2rem;
   text-align: justify;
 }
 
-.Article>h1 {
+.Article > h1 {
   margin: 2em 0 0 0;
 }
 
-.Article>h2 {
+.Article > h2 {
   margin: 2em 0 0 0;
   font-size: 1.8em;
 }
@@ -271,18 +304,18 @@ a:hover {
 }
 
 .Portfolio__Title {
-  margin:0.5em 0 0 0;
-  padding:0;
+  margin: 0.5em 0 0 0;
+  padding: 0;
   font-weight: bold;
   font-size: 1.5em;
 }
 
 .Portfolio__Title--LightBlue {
-  color: #75ccd0aa;
+  color: $primary-link-color-alpha;
 }
 
 .Portfolio__Title--LightBlue:hover {
-  color: #75ccd0;
+  color: $primary-link-color;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -298,18 +331,24 @@ a:hover {
 }
 
 .Portfolio__ProjectGrid {
+  display: -ms-grid;
   display: grid;
   width: 100%;
-  grid-template-columns: 25% 25% 25% 25%; 
-  column-gap: 1em;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
   row-gap: 5em;
 }
 
 .Porfolio__Project {
-  align-self: stretch;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }
 
 .Porfolio__ProjectImage {
   width: 100%;
   border-radius: 0.4em;
 }
+/*# sourceMappingURL=index.css.map */

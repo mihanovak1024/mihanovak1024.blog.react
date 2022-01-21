@@ -1,22 +1,11 @@
-:root {
-  --background-color: #252a34;
-  --footer-background-color: #1a1d24;
-
-  --primary-color: #eaeaea;
-  --primary-dark-color: #aaa;
-  --primary-link-color: #75ccd0;
-  --primary-link-color-alpha: #75ccd0aa;
-  --hr-color: #555;
-}
-
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 14px;
   margin: 0px;
   padding: 0px;
-  color: var(--primary-color);
+  color: #eaeaea;
   line-height: 1.5;
-  background-color: var(--background-color);
+  background-color: #252a34;
 }
 
 html, body, #root, #root > div {
@@ -32,12 +21,12 @@ hr {
   border-top: 1px;
   border-left: 0px;
   border-right: 0px;
-  border-color: var(--hr-color);
+  border-color: #555;
   width: 100%;
 }
 
 .TextSequence--Emphasize {
-  color: var(--primary-link-color);
+  color: #75ccd0;
   font-weight: bold;
 }
 
@@ -47,8 +36,8 @@ hr {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .MiddleSection {
@@ -59,12 +48,12 @@ hr {
   display: flex;
   width: 100%;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 a:hover {
-  color: var(--primary-dark-color);
+  color: #aaa;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -78,11 +67,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .Logo {
@@ -90,9 +79,9 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--primary-color);
+  -ms-flex-align: center;
+  align-items: center;
+  color: #eaeaea;
   text-decoration: none;
 }
 
@@ -114,7 +103,7 @@ a:hover {
 }
 
 .Menu__Item--NoLinkDecor {
-  color: var(--primary-color);
+  color: #eaeaea;
   text-decoration: none;
 }
 
@@ -141,7 +130,7 @@ a:hover {
   padding: 0.3em;
   border-style: solid;
   border-width: 1px;
-  border-color: var(--dark-primary-color);
+  border-color: #aaa;
 }
 
 .Contact__ItemImage {
@@ -162,8 +151,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Contact__Item--Hover:hover {
@@ -172,7 +161,7 @@ a:hover {
   margin-top: 0.5em;
   margin-left: 5em;
   -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .Contact__ItemLink {
@@ -180,13 +169,13 @@ a:hover {
 }
 
 .Contact__ItemContainer {
-  color: var(--primary-color);
+  color: #eaeaea;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Contact__ItemText {
@@ -198,7 +187,7 @@ a:hover {
 /* Footer  */
 .Footer {
   margin-top: 8em;
-  background-color: var(--footer-background-color);
+  background-color: #1a1d24;
 }
 
 .Footer__Text {
@@ -230,11 +219,11 @@ a:hover {
 }
 
 .Post__Link--LightBlue {
-  color: var(--primary-link-color-alpha);
+  color: #75ccd0aa;
 }
 
 .Post__Link--LightBlue:hover {
-  color: var(--primary-link-color);
+  color: #75ccd0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -244,8 +233,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Post__Details--Separator {
@@ -266,13 +255,13 @@ a:hover {
 
 .Post__ToTop {
   float: right;
-  color: var(--primary-link-color-alpha);
+  color: #75ccd0aa;
   margin-bottom: 1.5em;
   text-decoration: none;
 }
 
 .Post__ToTop:hover {
-  color: var(--primary-link-color);
+  color: #75ccd0;
 }
 
 /* About */
@@ -313,11 +302,11 @@ a:hover {
 }
 
 .Portfolio__Title--LightBlue {
-  color: var(--primary-link-color-alpha);
+  color: #75ccd0aa;
 }
 
 .Portfolio__Title--LightBlue:hover {
-  color: var(--primary-link-color);
+  color: #75ccd0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -337,16 +326,16 @@ a:hover {
   display: grid;
   width: 100%;
   -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
   -webkit-column-gap: 1em;
-          column-gap: 1em;
+  column-gap: 1em;
   row-gap: 5em;
 }
 
 .Porfolio__Project {
   -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
 }
 
 .Porfolio__ProjectImage {
