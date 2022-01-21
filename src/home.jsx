@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./css/index.css";
 import { BlogPost } from "./posts/short_blog_post.jsx";
 
 export class Home extends React.Component {

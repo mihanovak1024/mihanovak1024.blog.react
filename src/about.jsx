@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./css/index.css";
 import { Emphasize } from "./textutils";
 
 export class About extends React.Component {

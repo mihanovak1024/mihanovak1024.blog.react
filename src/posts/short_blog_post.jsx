@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css";
+import "../css/index.css";
 
 export class BlogPost extends React.Component {
   render() {
