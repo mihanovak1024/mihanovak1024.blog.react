@@ -1,11 +1,22 @@
+:root {
+  --background-color: #252a34;
+  --footer-background-color: #1a1d24;
+
+  --primary-color: #eaeaea;
+  --primary-dark-color: #aaa;
+  --primary-link-color: #75ccd0;
+  --primary-link-color-alpha: #75ccd0aa;
+  --hr-color: #555;
+}
+
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 14px;
   margin: 0px;
   padding: 0px;
-  color: #eaeaea;
+  color: var(--primary-color);
   line-height: 1.5;
-  background-color: #252a34;
+  background-color: var(--background-color);
 }
 
 html, body, #root, #root > div {
@@ -21,12 +32,12 @@ hr {
   border-top: 1px;
   border-left: 0px;
   border-right: 0px;
-  border-color: #555;
+  border-color: var(--hr-color);
   width: 100%;
 }
 
 .TextSequence--Emphasize {
-  color: #00adb5;
+  color: var(--primary-link-color);
   font-weight: bold;
 }
 
@@ -53,7 +64,7 @@ hr {
 }
 
 a:hover {
-  color: #aaa;
+  color: var(--primary-dark-color);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -81,7 +92,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #eaeaea;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -103,7 +114,7 @@ a:hover {
 }
 
 .Menu__Item--NoLinkDecor {
-  color: #eaeaea;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -130,7 +141,7 @@ a:hover {
   padding: 0.3em;
   border-style: solid;
   border-width: 1px;
-  border-color: #555;
+  border-color: var(--dark-primary-color);
 }
 
 .Contact__ItemImage {
@@ -169,7 +180,7 @@ a:hover {
 }
 
 .Contact__ItemContainer {
-  color: #eaeaea;
+  color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,7 +198,7 @@ a:hover {
 /* Footer  */
 .Footer {
   margin-top: 8em;
-  background-color: #1a1d24;
+  background-color: var(--footer-background-color);
 }
 
 .Footer__Text {
@@ -219,11 +230,11 @@ a:hover {
 }
 
 .Post__Link--LightBlue {
-  color: #75ccd0aa;
+  color: var(--primary-link-color-alpha);
 }
 
 .Post__Link--LightBlue:hover {
-  color: #75ccd0;
+  color: var(--primary-link-color);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -255,13 +266,13 @@ a:hover {
 
 .Post__ToTop {
   float: right;
-  color: #75ccd0aa;
+  color: var(--primary-link-color-alpha);
   margin-bottom: 1.5em;
   text-decoration: none;
 }
 
 .Post__ToTop:hover {
-  color: #75ccd0;
+  color: var(--primary-link-color);
 }
 
 /* About */
@@ -302,11 +313,11 @@ a:hover {
 }
 
 .Portfolio__Title--LightBlue {
-  color: #75ccd0aa;
+  color: var(--primary-link-color-alpha);
 }
 
 .Portfolio__Title--LightBlue:hover {
-  color: #75ccd0;
+  color: var(--primary-link-color);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }

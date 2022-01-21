@@ -1,3 +1,7 @@
+:root {
+  --background-color: #252a34;
+}
+
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
     "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
@@ -6,7 +10,7 @@ html {
   padding: 0px;
   color: #eaeaea;
   line-height: 1.5;
-  background-color: #252a34;
+  background-color: var(--background-color);
 }
 html, body, #root, #root>div {
   height: 100%
