@@ -9,7 +9,7 @@ export class BlogPost extends React.Component {
 
     // Redirect to the original blog
     // because I didn't want to rewrite everything from scratch.
-    const url = "https://mihanovak1024.com" + data.url;
+    const url = `https://mihanovak1024.com${data.url}`;
     return (
       <div className="Post">
         <a href={url} className="Post__Link--LightBlue">

@@ -23,7 +23,7 @@ export class Portfolio extends React.Component {
 }
 
 function ProjectsGrid(props) {
-  let projects = props.projects.map(project => <PortfolioProject key={project.title} url={project.url} img={project.img} title={project.title} excerpt={project.excerpt} />);
+  let projects = props.projects.map(project => <PortfolioProject key={project.title} {...project} />);
 
   return (
     <div className="Portfolio__ProjectGrid">
@@ -33,7 +33,7 @@ function ProjectsGrid(props) {
 }
 
 function PortfolioProject(props) {
-  let url = "https://mihanovak1024.com/portfolio/" + props.url;
+  let url = `https://mihanovak1024.com/portfolio/${props.url}`;
   return (
     <div className="Portfolio__Project">
       <img className="Portfolio__ProjectImage" src={props.img} />
